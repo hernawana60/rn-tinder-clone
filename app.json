@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "tinder-2",
+    "name": "tinder-3",
     "slug": "tinder-2",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -13,17 +13,31 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "package": "host.exp.exponent",
+      "config": {
+        "googleSignIn": {
+          "apiKey": "AIzaSyAJkUqMQyL2QWTUE963psfnqy0ycrka-bU",
+          "certificateHash": "50C51D8978A901DCFF2CE273F6328808783C4E8A"
+        }
+      },
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "category": ["BROWSABLE", "DEFAULT"],
+          "data": {
+            "scheme": "host.exp.exponent"
+          }
+        }
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
